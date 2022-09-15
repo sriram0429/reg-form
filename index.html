@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <style>
+        input#name:invalid:focus{
+            border:3px solid red;
+        }
+        input#email:invalid:focus{
+            border:3px solid red;
+        }
+        input#password:invalid:focus{
+            border:3px solid red;
+        }
+        input#dob:invalid:focus{
+            border:3px solid red;
+        }
+    </style>
+</head>
+<body>
+
+   <div>
+    <form id="t1">
+        <h2 id="j1"> Registration Form</h2>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter full name" required >
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter email" required>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter password" required>
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+        <div id="c1">
+            <input type="checkbox" id="acceptTerms" name="acceptTerms">&nbsp;
+            <label for="acceptTerms">Accept Terms and Conditions</label>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+    </div>
+
+    <div id="table-box">
+        <h1>Entries</h1>
+        <table id="user-table">
+          <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Password</th>
+            <th>Dob</th>
+            <th>Accepted terms?</th>
+            </tr>
+        </table>
+      </div>
+  </div>
+    <script src="function.js"></script>
+</body>
+</html>
